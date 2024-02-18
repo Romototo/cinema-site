@@ -1,0 +1,70 @@
+.collection {
+    margin-block: 50px;
+    padding: 0 20px;
+
+    &__cards {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .card {
+        width: 330px;
+        height: 480px;
+
+        overflow: hidden;
+        position: relative;
+
+
+        &:hover {
+            .card__content {
+                transform: translateY(0);
+            }
+        }
+
+        &__content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+
+            width: 100%;
+            height: 75%;
+
+            background-color: $card-content-color;
+            color: $text-second-color;
+            backdrop-filter: blur(20px);
+
+            padding: 15px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__genre-name, &__kinopoisk-link {
+            color: $card-accent-color;
+        }
+
+        &__kinopoisk-link {
+            align-self: flex-end;
+        }
+
+        &__link {
+            background-color: $card-accent-color;
+            text-align: center;
+            padding-block: 20px;
+        }
+
+    }
+
+}

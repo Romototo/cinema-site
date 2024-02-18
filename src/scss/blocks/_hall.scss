@@ -1,13 +1,7 @@
 .hall {
-    max-width: 1440px;
-    width: 100%;
     height: 80dvh;
     margin: 50px auto;
     padding-inline: 20px;
-
-    &__title {
-        margin-bottom: 25px;
-    }
 
     &__cards {
         display: flex;
@@ -45,13 +39,5 @@
         }
     }
 
-    &__link {
-        display: block;
-        width: fit-content;
-        color: $text-color;
-        padding: 5px;
-        font-size: $font-size-large;
-        margin-left: auto;
-    }
 }
 
