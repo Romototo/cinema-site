@@ -104,6 +104,7 @@ h1 {
 h2 {
   font-size: 4rem;
   line-height: 4rem;
+  font-weight: 700;
 }
 
 h3 {
@@ -168,4 +169,68 @@ h3 {
   text-align: center;
   padding-block: 15px;
   width: 100% !important;
+}
+.hall {
+  max-width: 1440px;
+  width: 100%;
+  height: 80dvh;
+  margin: 50px auto;
+  padding-inline: 20px;
+}
+.hall__title {
+  margin-bottom: 25px;
+}
+.hall__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hall__card {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -ms-flex-positive 0.3s ease-in-out;
+  height: 430px;
+}
+.hall__card:first-of-type {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(230, 120, 18, 0.49)), to(rgba(230, 120, 18, 0.49))), url("../img/back_to_the_future.png") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(230, 120, 18, 0.49), rgba(230, 120, 18, 0.49)), url("../img/back_to_the_future.png") center/cover no-repeat;
+}
+.hall__card:nth-of-type(2) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(39, 177, 221, 0.54)), to(rgba(39, 177, 221, 0.54))), url("../img/forest_g.png") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(39, 177, 221, 0.54), rgba(39, 177, 221, 0.54)), url("../img/forest_g.png") center/cover no-repeat;
+}
+.hall__card:nth-of-type(3) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(69, 187, 131, 0.24)), to(rgba(69, 187, 131, 0.24))), url("../img/matrix.png") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(69, 187, 131, 0.24), rgba(69, 187, 131, 0.24)), url("../img/matrix.png") center/cover no-repeat;
+}
+.hall__card:nth-of-type(4) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(69, 104, 228, 0.53)), to(rgba(69, 104, 228, 0.53))), url("../img/star_wars.png") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(69, 104, 228, 0.53), rgba(69, 104, 228, 0.53)), url("../img/star_wars.png") center/cover no-repeat;
+}
+.hall__card:last-of-type {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(238, 184, 45, 0.59)), to(rgba(238, 184, 45, 0.59))), url("../img/lotr.png") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(238, 184, 45, 0.59), rgba(238, 184, 45, 0.59)), url("../img/lotr.png") center/cover no-repeat;
+}
+.hall__card:hover {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  background-position: top;
+}
+.hall__link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #2E292A;
+  padding: 5px;
+  font-size: 2rem;
+  margin-left: auto;
 }
